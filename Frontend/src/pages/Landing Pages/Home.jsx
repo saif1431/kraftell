@@ -1,0 +1,28 @@
+import React from 'react'
+import Hero from '../../components/LandingPage Components/Home Components/Hero'
+import StartManufact from '../../components/LandingPage Components/Home Components/StartManufact'
+import Services from '../../components/LandingPage Components/Home Components/Services'
+import RightManufact from '../../components/LandingPage Components/Home Components/RightManufact'
+import SecurePayment from '../../components/LandingPage Components/Home Components/SecurePayment'
+import KraftellFounder from '../../components/LandingPage Components/Home Components/KraftellFounder'
+import Chat from '../../components/LandingPage Components/Home Components/Chat'
+import Navbar from '../../components/Reuseable Component/Navbar'
+import Footer from '../../components/Reuseable Component/Footer'
+
+function Home() {
+  return (
+    <div>
+      <Navbar/>
+<Hero/>
+<StartManufact/>
+<Services/>
+<RightManufact/>
+<SecurePayment/>
+<KraftellFounder/>
+<Footer/>
+{/* <Chat/> */}
+    </div>
+  )
+}
+
+export default Home
