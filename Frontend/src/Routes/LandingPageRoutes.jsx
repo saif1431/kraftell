@@ -2,11 +2,12 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Landing Pages/Home'
 import Footer from '../components/Reuseable Component/Footer'
-import ManufacturerForm from '../components/LandingPage Components/Home Components/ManufacturerForm'
-import BuyerForm from '../components/LandingPage Components/Home Components/BuyerForm'
-import Login from '../components/LandingPage Components/Home Components/Login'
 import Navbar from '../components/Reuseable Component/Navbar'
 import MemberShip from '../pages/Landing Pages/MemberShip'
+import ReleasePayment from '../pages/Buyer Pages/ReleasePayment'
+import BuyerSignUpForm from '../pages/Landing Pages/BuyerSignUpForm'
+import ManufacturerSignUpForm from '../pages/Landing Pages/ManufacturerSignUpForm'
+import LoginForm from '../pages/Landing Pages/LoginForm'
 
 
 function LandingPageRoutes() {
@@ -15,10 +16,11 @@ function LandingPageRoutes() {
       {/* <Navbar/> */}
       <Routes>
 <Route path='/' element={<Home />} />
-    <Route path='/ManufacturerForm' element={<ManufacturerForm />} />
-    <Route path='/BuyerForm' element={<BuyerForm />} />
-    <Route path='/Login' element={<Login />} />
+    <Route path='/ManufacturerForm' element={<ManufacturerSignUpForm />} />
+    <Route path='/BuyerSignUpForm' element={<BuyerSignUpForm />} />
+    <Route path='/Login' element={<LoginForm />} />
     <Route path='/MemberShip' element={<MemberShip />} />
+    <Route path='/ReleasePayment' element={<ReleasePayment />} />
     </Routes>
     {/* <Footer/> */}
 </div>

@@ -8,6 +8,7 @@ import KraftellFounder from '../../components/LandingPage Components/Home Compon
 import Chat from '../../components/LandingPage Components/Home Components/Chat'
 import Navbar from '../../components/Reuseable Component/Navbar'
 import Footer from '../../components/Reuseable Component/Footer'
+import TopFooter from '../../components/Reuseable Component/TopFooter'
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
 <RightManufact/>
 <SecurePayment/>
 <KraftellFounder/>
+<TopFooter/>
 <Footer/>
 {/* <Chat/> */}
     </div>

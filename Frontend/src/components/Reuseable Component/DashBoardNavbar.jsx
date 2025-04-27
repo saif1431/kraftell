@@ -15,7 +15,7 @@ function DashBoardNavbar() {
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'Search Manufacturers', path: '/searchManufacturers' },
     { name: 'Messages', path: '/manufacturer/orders' },
-    { name: 'Payment', path: '/manufacturer/inventory' },
+    { name: 'Payment', path: '/ReleasePayment' },
     { name: 'My Profile', path: '/MyProfile' },
     { name: 'MemberShip', path: '/MemberShip' }
   ];
