@@ -9,9 +9,9 @@ function ManufacturerNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const  ManufacturerLinks = [
-    { name: 'Dashboard', path: '/Man' },
+    { name: 'Dashboard', path: '/ManufacturerDashboard' },
     { name: 'Edit Profile', path: '/searchManufacturers' },
-    { name: 'Profile Summary', path: '/Message' },
+    { name: 'Profile Summary', path: '/ProfileSummary' },
     { name: 'Make Payment', path: '/ReleasePayment' },
     { name: 'View Matching Projects', path: '/MyProfile' },
     { name: 'Prototype Request', path: '/MemberShip' },

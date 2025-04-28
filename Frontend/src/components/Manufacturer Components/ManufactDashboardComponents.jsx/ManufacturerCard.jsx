@@ -1,9 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { IoSearch } from "react-icons/io5";
-import { PiCodesandboxLogoFill } from "react-icons/pi";
-import {  FaMessage } from "react-icons/fa6";
-import { FaCcApplePay } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
 
 
