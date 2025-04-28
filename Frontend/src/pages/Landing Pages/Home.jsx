@@ -5,7 +5,6 @@ import Services from '../../components/LandingPage Components/Home Components/Se
 import RightManufact from '../../components/LandingPage Components/Home Components/RightManufact'
 import SecurePayment from '../../components/LandingPage Components/Home Components/SecurePayment'
 import KraftellFounder from '../../components/LandingPage Components/Home Components/KraftellFounder'
-import Chat from '../../components/LandingPage Components/Home Components/Chat'
 import Navbar from '../../components/Reuseable Component/Navbar'
 import Footer from '../../components/Reuseable Component/Footer'
 import TopFooter from '../../components/Reuseable Component/TopFooter'
@@ -22,7 +21,6 @@ function Home() {
 <KraftellFounder/>
 <TopFooter/>
 <Footer/>
-{/* <Chat/> */}
     </div>
   )
 }

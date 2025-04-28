@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Paperclip, Send, Menu } from "lucide-react"
-import Image from "/logo.png"
+import Image from "/profileImg.svg"
 
 export default function Chat() {
   const [activeContact, setActiveContact] = useState({
@@ -94,37 +94,7 @@ export default function Chat() {
   }
 
   return (
-    <div className="flex h-full w-full flex-col">
-      {/* Header */}
-      <header className="flex items-center justify-between border-b border-gray-200 px-4 py-2">
-        <div className="flex items-center">
-          <div className="text-[#38bdf8] mr-2">
-            <img
-              src={Image}
-              alt="Kraftell Logo"
-              width={32}
-              height={32}
-              className="rounded-md"
-            />
-          </div>
-          <h1 className="text-xl font-bold">Kraftell</h1>
-        </div>
-        <div className="flex items-center space-x-4">
-          <div className="relative">
-            <div className="rounded-full bg-white p-2 shadow-sm">
-            <img
-              src={Image}
-              alt="Kraftell Logo"
-              width={32}
-              height={32}
-              className="rounded-md"
-            />
-              <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-yellow-400 text-xs"></span>
-            </div>
-          </div>
-          <Menu className="h-6 w-6" />
-        </div>
-      </header>
+    <div className="flex w-full h-[70vh] flex-col">
 
       <div className="flex flex-1 overflow-hidden">
         {/* Contacts Sidebar */}
@@ -132,10 +102,10 @@ export default function Chat() {
           {contacts.map((contact) => (
             <div
               key={contact.id}
-              className={`flex items-center border-b border-gray-200 p-4 cursor-pointer ${activeContact.id === contact.id ? "bg-gray-100" : ""}`}
+              className={`flex items-center border-b border-gray-200 px-6 py-4 shadow-md   cursor-pointer ${activeContact.id === contact.id ? "bg-gray-100" : ""}`}
               onClick={() => setActiveContact(contact)}
             >
-              <div className="relative mr-3">
+              <div className="relative mr-4">
               <img
               src={Image}
               alt="Kraftell Logo"

@@ -8,6 +8,7 @@ import ReleasePayment from '../pages/Buyer Pages/ReleasePayment'
 import BuyerSignUpForm from '../pages/Landing Pages/BuyerSignUpForm'
 import ManufacturerSignUpForm from '../pages/Landing Pages/ManufacturerSignUpForm'
 import LoginForm from '../pages/Landing Pages/LoginForm'
+import Message from '../pages/Buyer Pages/Message'
 
 
 function LandingPageRoutes() {
@@ -21,6 +22,7 @@ function LandingPageRoutes() {
     <Route path='/Login' element={<LoginForm />} />
     <Route path='/MemberShip' element={<MemberShip />} />
     <Route path='/ReleasePayment' element={<ReleasePayment />} />
+    <Route path='/Message' element={<Message />} />
     </Routes>
     {/* <Footer/> */}
 </div>

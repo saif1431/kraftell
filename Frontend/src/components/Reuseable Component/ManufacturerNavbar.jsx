@@ -5,16 +5,17 @@ import { TfiMenuAlt } from "react-icons/tfi";
 import { NavLink } from 'react-router-dom';
 // import { IoClose } from "react-icons/io5";
 
-function DashBoardNavbar() {
+function ManufacturerNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const  buyerLinks = [
-    { name: 'Dashboard', path: '/dashboard' },
-    { name: 'Search Manufacturers', path: '/searchManufacturers' },
-    { name: 'Messages', path: '/Message' },
-    { name: 'Payment', path: '/ReleasePayment' },
-    { name: 'My Profile', path: '/MyProfile' },
-    { name: 'MemberShip', path: '/MemberShip' }
+  const  ManufacturerLinks = [
+    { name: 'Dashboard', path: '/Man' },
+    { name: 'Edit Profile', path: '/searchManufacturers' },
+    { name: 'Profile Summary', path: '/Message' },
+    { name: 'Make Payment', path: '/ReleasePayment' },
+    { name: 'View Matching Projects', path: '/MyProfile' },
+    { name: 'Prototype Request', path: '/MemberShip' },
+    { name: 'MemberShip', path: '/MemberShip' },
   ];
 
 
@@ -37,7 +38,7 @@ function DashBoardNavbar() {
         <div className="absolute right-0 top-full mt-2 mr-4 w-64 bg-white rounded-md shadow-lg z-50 border border-gray-200">
           
           <ul className=" ">
-            {buyerLinks.map((link, index) => (
+            {ManufacturerLinks.map((link, index) => (
               <li className='bg-white rounded-md shadow-lg border border-gray-200' key={index}>
                 <NavLink to={link.path} 
                   className="block px-4 py-4 text-lg text-gray-800 hover:bg-gray-100"
@@ -63,4 +64,6 @@ function DashBoardNavbar() {
   );
 }
 
-export default DashBoardNavbar;
+export default ManufacturerNavbar; 
+
+

@@ -16,7 +16,7 @@ function DashboardCards() {
       icon: <IoSearch className="text-2xl" />,
       title: 'Search Manufacturers',
       description: 'Find the perfect manufacturing Partner',
-      route: '/products'
+      route: '/searchManufacturers'
     },
     {
       id: 2,
@@ -30,14 +30,14 @@ function DashboardCards() {
       icon: <FaMessage className="text-2xl" />,
       title: 'Messages',
       description: 'TView your conversations',
-      route: '/analytics'
+      route: '/Message'
     },
     {
       id: 4,
       icon: <FaCcApplePay className="text-2xl " />,
       title: 'Payments',
       description: 'Manage your transactions',
-      route: '/settings'
+      route: '/ReleasePayment'
     }
   ];
 
