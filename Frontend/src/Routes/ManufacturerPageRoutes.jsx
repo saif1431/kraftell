@@ -4,6 +4,8 @@ import ManufacturerDashboard from '../pages/Manufacturer Pages/ManufacturerDashb
 import ProfileSummary from '../pages/Manufacturer Pages/ProfileSummary'
 import RequestPrototype from '../pages/Manufacturer Pages/RequestPrototype'
 import SendMessageForm from '../pages/Manufacturer Pages/SendMessageForm'
+import PaymentFormPage from '../pages/Manufacturer Pages/PaymentFormPage'
+import PlaceOrderPage from '../pages/Manufacturer Pages/PlaceOrderPage'
 
 function ManufacturerPageRoutes() {
   return (
@@ -12,6 +14,8 @@ function ManufacturerPageRoutes() {
       <Route path='/ProfileSummary' element={<ProfileSummary />} />
       <Route path='/RequestPrototype' element={<RequestPrototype />} />
       <Route path='/SendMessageForm' element={<SendMessageForm />} />
+      <Route path='/PaymentForm' element={<PaymentFormPage />} />
+      <Route path='/PlaceOrder' element={<PlaceOrderPage />} />
    </Routes>
   )
 }

@@ -10,20 +10,21 @@ function ManufacturerNavbar() {
 
   const  ManufacturerLinks = [
     { name: 'Dashboard', path: '/ManufacturerDashboard' },
-    { name: 'Edit Profile', path: '/searchManufacturers' },
+    { name: 'Edit Profile', path: '/MyProfile' },
     { name: 'Profile Summary', path: '/ProfileSummary' },
-    { name: 'Make Payment', path: '/ReleasePayment' },
+    { name: 'Make Payment', path: '/PaymentForm' },
     { name: 'View Matching Projects', path: '/MyProfile' },
-    { name: 'Prototype Request', path: '/MemberShip' },
+    { name: 'Prototype Request', path: '/RequestPrototype' },
     { name: 'MemberShip', path: '/MemberShip' },
   ];
 
 
   return (
     <div className='flex justify-between items-center bg-white shadow-md px-10 py-4  sticky top-0 z-50'>
-      <div className='w-42'>
+      <NavLink to='/ManufacturerDashboard' className='w-42'>
+        
         <img src={logo} alt="Company Logo" />
-      </div>
+      </NavLink>
       
       <div className='flex items-center gap-4'>
         <LuMessageCircle className='text-3xl cursor-pointer hover:text-gray-600' />

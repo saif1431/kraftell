@@ -49,7 +49,7 @@ function SecurePayment() {
             <div className="flex  mb-2">
               {box.icon}
             </div>
-            <p className="text-black text-sm text-center">{box.text}</p>
+            <p className="text-black text-md text-center">{box.text}</p>
           </div>
         ))}
       </div>

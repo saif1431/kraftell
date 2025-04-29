@@ -30,7 +30,7 @@ function Services() {
 
       {/* Existing Heading/Paragraph */}
       <div className='text-center leading-tight lg:px-14 px-6 py-14'>
-        <h1 className='lg:text-2xl text-2xl font-bold text-[#525252]'>
+        <h1 className='lg:text-3xl text-2xl font-bold text-[#525252]'>
           Powered by AI, Built for Fast-Moving Teams and Business Owners
         </h1>
         <p className='mt-4 max-w-4xl mx-auto leading-relaxed text-[#525252]'>
