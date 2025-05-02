@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from '/HomeImg3.jpg'
+import Image2 from '/HomeImg4.png'
 import { IoMdCheckmarkCircle } from "react-icons/io";
 
 
 function RightManufact() {
   return (
-    <div className='bg-[#E5E7EB] lg:px-14 px-6 py-14 space-y-8 lg:space-y-24'>
+    <div className='bg-[#E5E7EB] lg:px-38 px-6 py-14 space-y-8 lg:space-y-24'>
          <div className='  flex items-center justify-between flex-col md:flex-row gap-6'>
                   <div className='space-y-4 lg:w-1/2 w-full'>
                         <h4 className='lg:text-3xl text-2xl font-bold'>Find the Right Manufacturer Instantly</h4>
@@ -33,7 +34,7 @@ function RightManufact() {
             <div className=' flex items-center  justify-between flex-col-reverse md:flex-row gap-6'>
 
             <div className='lg:w-1/2 w-full flex items-end justify-start'>
-                        <img className='rounded-lg lg:w-[80%]  w-full' src={Image} alt="" />
+                        <img className='rounded-lg lg:w-[80%]  w-full' src={Image2} alt="" />
                   </div>
                   <div className=' space-y-4 '>
                         <h4 className='lg:text-3xl text-2xl font-bold'>Own A Piece Of European Originality</h4>

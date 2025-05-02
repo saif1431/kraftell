@@ -9,19 +9,19 @@ import { IoIosTime } from "react-icons/io";
 function SecurePayment() {
   const serviceBoxes = [
     {
-      icon: <AiOutlineDollarCircle className="text-2xl text-blue-600" />,
+      icon: <AiOutlineDollarCircle className="text-4xl text-blue-600" />,
       text: "Milestone-based payments"
     },
     {
-      icon: <IoIosTime className="text-3xl text-blue-600" />,
+      icon: <IoIosTime className="text-4xl text-blue-600" />,
       text: "Secure escrow system"
     },
     {
-      icon: <IoIosTime className="text-3xl text-blue-600" />,
+      icon: <IoIosTime className="text-4xl text-blue-600" />,
       text: "Integrated payments"
     },
     {
-      icon: <LuMessageSquare className="text-3xl text-blue-600" />,
+      icon: <LuMessageSquare className="text-4xl text-blue-600" />,
       text: "Built-in messaging"
     }
   ];

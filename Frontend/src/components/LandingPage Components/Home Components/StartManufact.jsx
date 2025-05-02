@@ -13,8 +13,8 @@ function StartManufact() {
 
 {/* Second Div --------------- */}
 
-      <div className='bg-[#E5E7EB] lg:px-14 px-8 py-14 flex items-center justify-between flex-col md:flex-row gap-6'>
-            <div className='space-y-4 lg:w-1/2 w-full'>
+      <div className='bg-[#E5E7EB] lg:px-38 px-8 py-14 flex items-center  flex-col md:flex-row gap-6'>
+            <div className='space-y-4  w-full flex flex-col justify-end'>
                   <h4 className='lg:text-3xl text-xl font-bold'>Why Predictive Ordering Matters</h4>
                   <div className='checkBox space-x-1 flex items-center'>
                   <IoMdCheckmarkCircle  className='text-[#3978edc4]  rounded-full' />
@@ -33,8 +33,8 @@ function StartManufact() {
                         <span className='text-lg'>Historical pattern analysis</span>
                   </div>
             </div>
-            <div className='lg:w-1/2 w-full flex items-end justify-end'>
-                  <img className='rounded-lg lg:w-[80%] w-full' src={Image} alt="" />
+            <div className='w-full flex items-end justify-start'>
+                  <img className='rounded-lg lg:w-[90%] w-full' src={Image} alt="" />
             </div>
       </div>
     </div>

@@ -1,12 +1,13 @@
 import React from 'react'
-import DashboardNavbar from '../../components/Reuseable Component/DashboardNavbar'
+
 import ReleasePaymentForm from '../../components/Buyer Components/PaymentComponent/ReleasePaymentForm'
 import Footer from '../../components/Reuseable Component/Footer'
+import DashBoardNavbar from '../../components/Reuseable Component/DashBoardNavbar'
 
 function ReleasePayment() {
   return (
     <div>
-<DashboardNavbar/>
+<DashBoardNavbar/>
 <ReleasePaymentForm/>
 <Footer/>
     </div>

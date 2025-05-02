@@ -11,7 +11,7 @@ function KraftellFounder() {
             <h1 className='lg:text-2xl text-2xl font-bold'>Kraftell helped us plan smarter and saved 2 weeks in turnaround.</h1>
             <p className='mt-4 max-w-4xl mx-auto leading-relaxed text-primary'>
               <span className='text-black font-bold mx-2'>Antje Krause</span>
-              Co-Founder, AYOKA Keramik, Berlins
+              Co-Founder, AYOKA Keramik, Berlin
             </p>
       </div>
     </div>

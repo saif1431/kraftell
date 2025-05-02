@@ -7,19 +7,19 @@ import { IoIosTime } from "react-icons/io";
 function Services() {
   const serviceBoxes = [
     {
-      icon: <GoGraph className="text-2xl text-blue-600" />,
+      icon: <GoGraph className="text-4xl text-blue-600" />,
       text: "Forecast optimal order windows"
     },
     {
-      icon: <IoIosTime className="text-3xl text-blue-600" />,
+      icon: <IoIosTime className="text-4xl text-blue-600" />,
       text: "Estimate delivery lead times"
     },
     {
-      icon: <IoIosTime className="text-3xl text-blue-600" />,
+      icon: <IoIosTime className="text-4xl text-blue-600" />,
       text: "Track material price trends"
     },
     {
-      icon: <IoIosTime className="text-3xl text-blue-600" />,
+      icon: <IoIosTime className="text-4xl text-blue-600" />,
       text: "Avoid overstock & delays"
     }
   ];
@@ -46,7 +46,7 @@ function Services() {
             key={index} 
             className="bg-white p-5 rounded-md shadow-sm hover:shadow-md transition-shadow "
           >
-            <div className="flex  mb-2">
+            <div className="flex   mb-2">
               {box.icon}
             </div>
             <p className="text-black text-sm">{box.text}</p>
