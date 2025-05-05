@@ -123,7 +123,7 @@ const PaymentForm = () => {
             />
           </div>
 
-          <NavLink to='/PlaceOrder'
+          <NavLink to='/ReleasePayment'
             type="submit"
             className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center space-x-2 transition-colors"
           >

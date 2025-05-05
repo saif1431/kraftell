@@ -8,6 +8,11 @@ import PrototypeWorkflowPage from '../pages/Buyer Pages/PrototypeWorkflowPage'
 import PlatformActorsPage from '../pages/Buyer Pages/PlatformActorsPage'
 import ProductSpecificationPage from '../pages/Buyer Pages/ProductSpecificationPage'
 import OrderManagementPage from '../pages/Buyer Pages/OrderManagementPage'
+import BuyerPrototypePage from '../pages/Buyer Pages/BuyerPrototypePage'
+import BuyerApprovedPage from '../pages/Buyer Pages/BuyerApprovedPage'
+import BuyerPaymentForm from '../pages/Buyer Pages/BuyerPaymentForm'
+import ReleasePayment from '../pages/Buyer Pages/ReleasePayment'
+import ManufacturerProfilePage from '../pages/Buyer Pages/ManufacturerProfilePage'
 
 function BuyerPageRoutes() {
   return (
@@ -20,6 +25,12 @@ function BuyerPageRoutes() {
       <Route path='/PlatformActors' element={<PlatformActorsPage />} />
       <Route path='/ProductSpecification' element={<ProductSpecificationPage />} />
       <Route path='/OrderManagement' element={<OrderManagementPage />} />
+      <Route path='/ReleasePayment' element={<ReleasePayment />} />
+      <Route path='/BuyerPrototypes' element={<BuyerPrototypePage />} />
+      <Route path='/BuyerApprovalForm' element={<BuyerApprovedPage />} />
+      <Route path='/BuyerPaymentForm' element={<BuyerPaymentForm />} />
+      <Route path='/ManufacturerProfile' element={<ManufacturerProfilePage />} />
+     
    </Routes>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLocationDot } from "react-icons/fa6";
+import { NavLink } from 'react-router-dom';
 
 const ManufacturerSearchResults = () => {
   // Sample data for manufacturers
@@ -58,9 +59,9 @@ const ManufacturerSearchResults = () => {
                 <p className=" px-2 py-1 rounded-full text-2xl font-medium">
                   {manufacturer.matchPercentage}% <span className='text-sm text-primary'>match</span>
                 </p>
-                <button className="mt-2 bg-blue-600 hover:bg-blue-800 font-semibold text-white py-2 px-4 rounded">
+                <NavLink to='/ManufacturerProfile' className="mt-2 bg-blue-600 hover:bg-blue-800 font-semibold text-white py-2 px-4 rounded">
                   View Profile
-                </button>
+                </NavLink>
               </div>
             </div>
           </div>

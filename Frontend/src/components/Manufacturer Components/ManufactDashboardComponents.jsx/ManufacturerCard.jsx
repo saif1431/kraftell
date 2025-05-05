@@ -12,7 +12,7 @@ function ManufacturerCard() {
       title: 'Matching Projects',
       TotalNumber: '24',
       description: 'New matches today',
-      route: '/matching-projects' // Added actual route path
+      route: '' // Added actual route path
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ function ManufacturerCard() {
       title: 'Messages',
       TotalNumber: '24',
       description: 'Unread Message',
-      route: '/my-prototypes'
+      route: ''
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ function ManufacturerCard() {
       title: 'Payments',
       TotalNumber: '$2,400',
       description: 'Available balance',
-      route: '/release-payment'
+      route: ''
     }
   ];
 

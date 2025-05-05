@@ -3,26 +3,41 @@ import logo from '/logo.png';
 import { LuMessageCircle } from "react-icons/lu";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { NavLink } from 'react-router-dom';
-// import { IoClose } from "react-icons/io5";
 
 function ManufacturerNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
 
-  const  ManufacturerLinks = [
+  const ManufacturerLinks = [
     { name: 'Dashboard', path: '/ManufacturerDashboard' },
-    { name: 'Edit Profile', path: '/MyProfile' },
+    { name: 'Edit Profile', path: '/EditProfile' },
     { name: 'Profile Summary', path: '/ProfileSummary' },
     { name: 'Make Payment', path: '/PaymentForm' },
-    { name: 'View Matching Projects', path: '/MyProfile' },
-    { name: 'Prototype Request', path: '/RequestPrototype' },
+    { name: 'View Matching Projects', path: '' },
+    { name: 'Prototype Request', path: '/PendingPrototypes' },
     { name: 'MemberShip', path: '/MemberShip' },
   ];
 
+  const handleLogoutClick = (e) => {
+    e.preventDefault();
+    setShowLogoutModal(true);
+    setIsMenuOpen(false);
+  };
+
+  const confirmLogout = () => {
+    // Add your logout logic here
+    console.log('Manufacturer logged out');
+    setShowLogoutModal(false);
+    // Redirect to login page or perform other logout actions
+  };
+
+  const cancelLogout = () => {
+    setShowLogoutModal(false);
+  };
 
   return (
-    <div className='flex justify-between items-center bg-white shadow-md px-10 py-4  sticky top-0 z-50'>
+    <div className='flex justify-between items-center bg-white shadow-md px-10 py-4 sticky top-0 z-50'>
       <NavLink to='/ManufacturerDashboard' className='w-42'>
-        
         <img src={logo} alt="Company Logo" />
       </NavLink>
       
@@ -37,8 +52,7 @@ function ManufacturerNavbar() {
       {/* Menu Popup */}
       {isMenuOpen && (
         <div className="absolute right-0 top-full mt-2 mr-4 w-64 bg-white rounded-md shadow-lg z-50 border border-gray-200">
-          
-          <ul className=" ">
+          <ul className="">
             {ManufacturerLinks.map((link, index) => (
               <li className='bg-white rounded-md shadow-lg border border-gray-200' key={index}>
                 <NavLink to={link.path} 
@@ -55,9 +69,35 @@ function ManufacturerNavbar() {
             <a 
               href="/logout" 
               className="block text-gray-800 px-4 py-4 text-lg hover:bg-gray-100"
+              onClick={handleLogoutClick}
             >
               Logout
             </a>
+          </div>
+        </div>
+      )}
+
+      {/* Logout Confirmation Modal */}
+      {showLogoutModal && (
+        <div className="fixed inset-0  bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white shadow-lg border border-gray-300 rounded-lg p-6 max-w-md w-full mx-4">
+            <h2 className="text-xl font-semibold mb-4">Confirm Logout</h2>
+            <p className="mb-6">Are you sure you want to logout?</p>
+            
+            <div className="flex justify-end space-x-4">
+              <button
+                onClick={cancelLogout}
+                className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100 transition"
+              >
+                Cancel
+              </button>
+              <NavLink to='/ManufacturerDashboard'
+                onClick={confirmLogout}
+                className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition"
+              >
+                Logout
+              </NavLink>
+            </div>
           </div>
         </div>
       )}
@@ -65,6 +105,4 @@ function ManufacturerNavbar() {
   );
 }
 
-export default ManufacturerNavbar; 
-
-
+export default ManufacturerNavbar;

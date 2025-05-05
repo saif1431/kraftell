@@ -23,7 +23,7 @@ function DashboardCards() {
       icon: <PiCodesandboxLogoFill className="text-2xl" />,
       title: 'My Prototypes',
       description: 'Track your prototype requests',
-      route: '/MyPrototypes'
+      route: '/BuyerPrototypes'
     },
     {
       id: 3,

@@ -7,6 +7,9 @@ import SendMessageForm from '../pages/Manufacturer Pages/SendMessageForm'
 import PaymentFormPage from '../pages/Manufacturer Pages/PaymentFormPage'
 import PlaceOrderPage from '../pages/Manufacturer Pages/PlaceOrderPage'
 import PendingPrototypePage from '../pages/Manufacturer Pages/PendingPrototypePage'
+import EditProfilePage from '../pages/Manufacturer Pages/EditProfilePage'
+import ProductRequestPage from '../pages/Manufacturer Pages/ProductRequestPage'
+import UploadPreviewPage from '../pages/Manufacturer Pages/UploadPreviewPage'
 
 function ManufacturerPageRoutes() {
   return (
@@ -18,6 +21,9 @@ function ManufacturerPageRoutes() {
       <Route path='/PaymentForm' element={<PaymentFormPage />} />
       <Route path='/PlaceOrder' element={<PlaceOrderPage />} />
       <Route path='/PendingPrototypes' element={<PendingPrototypePage />} />
+      <Route path='/EditProfile' element={<EditProfilePage />} />
+      <Route path='/ProductRequestForm' element={<ProductRequestPage />} />
+      <Route path='/UploadPreview' element={<UploadPreviewPage />} />
    </Routes>
   )
 }

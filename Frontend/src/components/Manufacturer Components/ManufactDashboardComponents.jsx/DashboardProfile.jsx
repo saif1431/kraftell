@@ -1,6 +1,7 @@
 import React from 'react'
 import profileImg from '/profileImg.svg'
 import { FaEdit } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 
 function DashboardProfile() {
@@ -10,8 +11,10 @@ function DashboardProfile() {
 <h1 className='text-2xl font-semibold'>John Doe</h1>
 <p className='text-primary'>UI/UX Designer</p>
 <div className='flex items-center ga-2 text-primary mt-3'>
+<NavLink to='/EditProfile' className='flex items-center gap-2'>
 <FaEdit />
 <span>Edit Profile</span>
+</NavLink>
 </div>
 </div>
   )

@@ -4,11 +4,12 @@ import PrototypeApprovalForm from '../../components/Buyer Components/MyPrototype
 import PrototypeDecision from '../../components/Buyer Components/MyPrototypesComponent/PrototypeDecision'
 import RevisionHistory from '../../components/Buyer Components/MyPrototypesComponent/RevisionHistory'
 import Footer from '../../components/Reuseable Component/Footer'
+import ManufacturerNavbar from '../../components/Reuseable Component/ManufacturerNavbar'
 
 function MyPrototypes() {
   return (
     <div className='bg-primary'>
-      <DashBoardNavbar/>
+      <ManufacturerNavbar/>
       <div className='lg:px-18 px-4 py-14 space-y-6'> 
             <PrototypeApprovalForm/>
             <PrototypeDecision/>
