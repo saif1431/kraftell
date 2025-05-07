@@ -1,4 +1,7 @@
- function Certifications() {
+import { useState } from "react";
+
+ function Certifications({ data, onUploadClick }) {
+
       const users = [
         {
           id: 1,
@@ -26,9 +29,11 @@
       return (
 
             <div className=" overflow-y-auto">
-                   <div className="flex justify-between items-center p-4 border-b border-gray-200">
+                   <div className="flex flex-col md:flex-row justify-between lg:items-center lg:p-4 p-2 border-b border-gray-200">
           <h2 className="text-lg font-medium">Supplier Certifications</h2>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+          <button 
+          onClick={onUploadClick}
+          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
             Upload Now
           </button>
         </div>

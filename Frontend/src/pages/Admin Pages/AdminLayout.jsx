@@ -19,7 +19,7 @@ function AdminLayout() {
  onClose={() => setSidebarOpen(false)} 
 />
 </div>
-<main className="flex-1 overflow-auto p-6">
+<main className="flex-1 overflow-auto lg:p-6 p-3">
 {/* <h1>DEBUG: Layout is rendering</h1> */}
 <Outlet />
 </main>

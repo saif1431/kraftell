@@ -28,14 +28,14 @@ function BuyerPrototypeHeader() {
   const pendingData = [
     {
       id: 1,
-      transactionId: 'TX-78947',
+      // transactionId: 'TX-78947',
       amount: '$1,500.00',
       status: 'Pending Review',
       date: '2025-05-16'
     },
     {
       id: 2,
-      transactionId: 'TX-78948',
+      // transactionId: 'TX-78948',
       amount: '$720.00',
       status: 'Pending Approval',
       date: '2025-05-15'

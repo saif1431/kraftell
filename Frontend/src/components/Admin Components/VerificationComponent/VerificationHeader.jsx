@@ -3,9 +3,11 @@ import Certifications from './Certifications';
 import BlacklistManagement from './BlacklistManagement';
 import ReviewModeration from './ReviewModeration';
 import ContentModeration from './ContentModeration';
+import UploadCertificate from './UploadCertificate';
 
 
 function VerificationHeader() {
+  const [showUploadPopup, setShowUploadPopup] = useState(false);
   const [activeTab, setActiveTab] = useState('certifications');
 
   // Sample data for each tab
@@ -83,11 +85,11 @@ function VerificationHeader() {
       <div className='flex items-center flex-wrap justify-between mb-6'>
         <div className="flex border-b flex-wrap border-gray-200 ">
           <button 
-            onClick={() => setActiveTab('certifications')}
             className={`px-4 py-2 font-medium whitespace-nowrap ${activeTab === 'certifications' ? 'text-blue-500 border-b-2 border-blue-500' : 'text-primary hover:text-gray-700'}`}
           >
             Certifications
           </button>
+
           <button 
             onClick={() => setActiveTab('blacklist')}
             className={`px-4 py-2 font-medium whitespace-nowrap ${activeTab === 'blacklist' ? 'text-blue-500 border-b-2 border-blue-500' : 'text-primary hover:text-gray-700'}`}
@@ -113,12 +115,27 @@ function VerificationHeader() {
       </div>
 
       {/* Tab Content */}
-      <div className='bg-white rounded-md p-4'>
-        {activeTab === 'certifications' && <Certifications data={certificationsData} />}
+      <div className='bg-white rounded-md lg:p-4 p-2'>
+      {activeTab === 'certifications' && (
+          <Certifications 
+            data={certificationsData} 
+            onUploadClick={() => setShowUploadPopup(true)} 
+          />
+        )}
         {activeTab === 'blacklist' && <BlacklistManagement data={blacklistData} />}
         {activeTab === 'review' && <ReviewModeration data={reviewData} />}
         {activeTab === 'content' && <ContentModeration data={contentData} />}
       </div>
+        {/* Upload Popup - MOVED TO HERE */}
+        {showUploadPopup && (
+        <UploadCertificate 
+          onClose={() => setShowUploadPopup(false)} 
+          onUpload={(file) => {
+            console.log("File uploaded:", file);
+            setShowUploadPopup(false);
+          }}
+        />
+      )}
     </div>
   );
 }

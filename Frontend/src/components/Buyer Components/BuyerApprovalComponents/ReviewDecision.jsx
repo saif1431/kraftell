@@ -21,7 +21,7 @@ function ReviewDecision() {
   };
 
   return (
-    <div className='space-y-6'>
+    <div className='space-y-6 bg-white rounded-md p-6'>
       <h1 className='text-xl font-semibold'>Review Decision</h1>
       <div className='flex flex-wrap items-center gap-4'>
         <button 
@@ -39,13 +39,13 @@ function ReviewDecision() {
       </div>
 
       {/* Comments Section */}
-      <div className=''>
+      <div className=' '>
         <h1 className='text-2xl font-semibold'>Comments</h1>
         <div className='mt-4 bg-white w-full h-[300px] rounded-lg text-primary'>
           <textarea 
             value={comments}
             onChange={(e) => setComments(e.target.value)}
-            className='w-full h-full p-3 border-none outline-none resize-none'
+            className='w-full h-full p-3 border border-gray-300 rounded-md outline-none resize-none'
             placeholder='Enter your comments here...'
           />
         </div>
