@@ -36,13 +36,16 @@ function ManufacturerNavbar() {
   };
 
   return (
-    <div className='flex justify-between items-center bg-white shadow-md px-10 py-4 sticky top-0 z-50'>
+    <div className='flex justify-between items-center bg-white shadow-md lg:px-10 px-4 py-4 sticky top-0 z-50'>
       <NavLink to='/ManufacturerDashboard' className='w-42'>
         <img src={logo} alt="Company Logo" />
       </NavLink>
       
       <div className='flex items-center gap-4'>
-        <LuMessageCircle className='text-3xl cursor-pointer hover:text-gray-600' />
+       <div className='relative'>
+       <LuMessageCircle className='text-3xl cursor-pointer hover:text-gray-600' />
+       <div className='w-2 h-2 bg-[#FFBB00] absolute left-5 bottom-1 rounded-full'></div>
+       </div>
         <TfiMenuAlt 
           className='text-3xl cursor-pointer hover:text-gray-600' 
           onClick={() => setIsMenuOpen(!isMenuOpen)}

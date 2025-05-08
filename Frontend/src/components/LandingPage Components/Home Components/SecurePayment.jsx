@@ -1,8 +1,10 @@
 import React from 'react';
 import { AiOutlineDollarCircle } from "react-icons/ai";
-import { LuMessageSquare } from "react-icons/lu";
+import { LuMessageSquare, LuMessageSquareCode } from "react-icons/lu";
 
 import { IoIosTime } from "react-icons/io";
+import { GoShieldCheck } from 'react-icons/go';
+import { FaCreditCard } from 'react-icons/fa';
 
 
 
@@ -13,15 +15,15 @@ function SecurePayment() {
       text: "Milestone-based payments"
     },
     {
-      icon: <IoIosTime className="text-4xl text-blue-600" />,
+      icon: <GoShieldCheck  className="text-4xl text-blue-600" />,
       text: "Secure escrow system"
     },
     {
-      icon: <IoIosTime className="text-4xl text-blue-600" />,
+      icon: <FaCreditCard  className="text-4xl text-blue-600" />,
       text: "Integrated payments"
     },
     {
-      icon: <LuMessageSquare className="text-4xl text-blue-600" />,
+      icon: <LuMessageSquareCode className="text-4xl text-blue-600" />,
       text: "Built-in messaging"
     }
   ];

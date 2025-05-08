@@ -8,6 +8,9 @@ import KraftellFounder from '../../components/LandingPage Components/Home Compon
 import Navbar from '../../components/Reuseable Component/Navbar'
 import Footer from '../../components/Reuseable Component/Footer'
 import TopFooter from '../../components/Reuseable Component/TopFooter'
+import JoinPlatform from '../../components/LandingPage Components/Home Components/JoinPlatform'
+import OurServices from '../../components/LandingPage Components/Home Components/OurServices'
+import ServeIndustry from '../../components/LandingPage Components/Home Components/ServeIndustry'
 
 function Home() {
   return (
@@ -17,7 +20,12 @@ function Home() {
 <StartManufact/>
 <Services/>
 <RightManufact/>
-<SecurePayment/>
+<JoinPlatform/>
+<div className='bg-primary py-12 px-4 space-y-14'>
+<OurServices/>
+<ServeIndustry/>
+  </div>
+  <SecurePayment/>
 <KraftellFounder/>
 <TopFooter/>
 <Footer/>

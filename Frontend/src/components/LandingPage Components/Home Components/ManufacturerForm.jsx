@@ -55,7 +55,7 @@ const ManufacturerForm = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-lg w-full space-y-8 bg-[#EAEAEA] p-8 rounded-lg shadow-md">
+      <div className="max-w-lg w-full space-y-8 bg-[#EAEAEA] lg:p-8 p-4 rounded-lg shadow-md">
         <div className="text-center">
           <h2 className="mt-6 text-2xl font-semibold text-gray-900">
             Register As Manufacturer

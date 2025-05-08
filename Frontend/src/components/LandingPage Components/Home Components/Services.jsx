@@ -1,6 +1,7 @@
 import React from 'react';
 import { GoGraph } from "react-icons/go";
 import { IoIosTime } from "react-icons/io";
+import { FaChartBar } from "react-icons/fa6";
 
 
 
@@ -15,7 +16,7 @@ function Services() {
       text: "Estimate delivery lead times"
     },
     {
-      icon: <IoIosTime className="text-4xl text-blue-600" />,
+      icon: <FaChartBar className=" text-4xl text-blue-600" />,
       text: "Track material price trends"
     },
     {

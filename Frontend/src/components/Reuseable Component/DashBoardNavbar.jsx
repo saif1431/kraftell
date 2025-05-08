@@ -35,10 +35,10 @@ function DashBoardNavbar() {
   };
 
   return (
-    <div className='flex justify-between items-center bg-white shadow-md px-10 py-4 sticky top-0 z-50'>
-      <div className='w-42'>
+    <div className='flex justify-between items-center bg-white shadow-md lg:px-10 px-4 py-4 sticky top-0 z-50'>
+      <NavLink to='/dashboard' className='w-42'>
         <img src={logo} alt="Company Logo" />
-      </div>
+      </NavLink>
       
       <div className='flex items-center gap-4'>
         <LuMessageCircle className='text-3xl cursor-pointer hover:text-gray-600' />

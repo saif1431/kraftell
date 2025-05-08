@@ -31,7 +31,7 @@ function RightManufact() {
                         <img className='rounded-lg lg:w-[80%] w-full' src={Image} alt="" />
                   </div>                  
             </div>
-            <div className=' flex items-center  justify-between flex-col-reverse md:flex-row gap-6'>
+            {/* <div className=' flex items-center  justify-between flex-col-reverse md:flex-row gap-6'>
 
             <div className='lg:w-1/2 w-full flex items-end justify-start'>
                         <img className='rounded-lg lg:w-[80%]  w-full' src={Image2} alt="" />
@@ -41,7 +41,7 @@ function RightManufact() {
                      <p className='max-w-xl text-lg'>Through Kraftell, designers and people from around the world collaborate with Europe's most skilled makers to create exceptional fashion, wares, and style pieces. Discover effortless originality, elevated standards, and the spirit of authentic craftsmanship crafted in Europe, made for you.</p>
                   </div>
                
-            </div>
+            </div> */}
     </div>
   )
 }
