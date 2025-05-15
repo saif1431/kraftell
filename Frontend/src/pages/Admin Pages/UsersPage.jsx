@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import AdminHeader from "../../components/Reuseable Component/AdminHeader";
 import UserTable from "../../components/Admin Components/UserComponents/UserTable";
-import UserModal from "../../components/Admin Components/UserComponents/UserModal";
-import ConfirmModal from "../../components/Reuseable Component/ConfirmModal";
+import UploadCertificate from "../../components/Admin Components/VerificationComponent/UploadCertificate";
+
 
 function UsersPage() {
   const [users, setUsers] = useState([]);
@@ -75,13 +75,13 @@ function UsersPage() {
       </div>
 
       {showModal && (
-        <UserModal
+        <UploadCertificate
           user={editingUser}
           onClose={() => setShowModal(false)}
           onSave={handleSave}
         />
       )}
-
+{/* 
       <ConfirmModal
         isOpen={confirmDeleteId !== null}
         onConfirm={handleDeleteConfirm}
@@ -89,7 +89,7 @@ function UsersPage() {
         title="Delete User"
         btnName="Delete"
         message="Are you sure you want to delete this user?"
-      />
+      /> */}
     </div>
   );
 }
