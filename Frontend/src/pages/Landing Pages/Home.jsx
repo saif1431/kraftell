@@ -24,8 +24,8 @@ function Home() {
 <div className='bg-primary py-12 px-4 space-y-14'>
 <OurServices/>
 <ServeIndustry/>
-  </div>
-  <SecurePayment/>
+</div>
+<SecurePayment/>
 <KraftellFounder/>
 <TopFooter/>
 <Footer/>
