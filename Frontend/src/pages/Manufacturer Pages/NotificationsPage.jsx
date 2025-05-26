@@ -15,7 +15,7 @@ function NotificationsPage() {
       <IoNotifications />
       <h1 className='font-semibold'>Notification & Logs</h1>
       </div>
-      <div className='flex flex-col md:flex-row  items-start gap-6'>
+      <div className='flex flex-col md:flex-row mt-4  items-start gap-6'>
             <div className='flex-1 w-full space-y-8'>
             <NotificationsList/>    
             <ActivityLog/>

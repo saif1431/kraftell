@@ -129,6 +129,19 @@ const BuyerForm = () => {
                 onChange={handleChange}
               />
             </div>
+            <div className='mt-1 block w-full px-3 py-3 bg-white rounded-sm outline-none text-primary'>
+              <label htmlFor="">Upload image</label>
+              <input
+                id="brandName"
+                name="brandName"
+                placeholder='Brand Name'
+                type="file"
+                required
+                className="mt-1 block w-full px-3 py-3 bg-white rounded-sm outline-none"
+                value={formData.brandName}
+                onChange={handleChange}
+              />
+            </div>
 
             {/* Email */}
             <div>

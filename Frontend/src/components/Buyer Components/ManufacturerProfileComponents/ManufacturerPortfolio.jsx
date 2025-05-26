@@ -1,5 +1,6 @@
 import React from 'react'
 import portfolio from '/portfolio.jpg'
+import { NavLink } from 'react-router-dom'
 
 function ManufacturerPortfolio() {
   return (
@@ -18,6 +19,11 @@ function ManufacturerPortfolio() {
             <div className='h-[300px] rounded-lg '>
                   <img className='w-full h-full rounded-lg object-cover object-center' src={portfolio} alt="" />
             </div>
+      </div>
+      <div className='flex justify-center mt-6'>
+            <NavLink className='bg-[#3977ED] text-white px-6 py-3 rounded-lg' to='/ProductCatalogue'>
+            View Catalog
+            </NavLink>
       </div>
     </div>
   )

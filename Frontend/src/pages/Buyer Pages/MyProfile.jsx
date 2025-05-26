@@ -5,6 +5,7 @@ import ProfileInformation from '../../components/Buyer Components/MyProfileCompo
 import Document from '../../components/Buyer Components/MyProfileComponents.jsx/Document'
 import ChangePassword from '../../components/Buyer Components/MyProfileComponents.jsx/ChangePassword'
 import NotificationsPage from '../Manufacturer Pages/NotificationsPage'
+import Footer from '../../components/Reuseable Component/Footer'
 // import NotificationSettings from '../../components/Buyer Components/MyProfileComponents.jsx/NotificationSettings' // Create this new component
 
 function MyProfile() {
@@ -19,7 +20,7 @@ function MyProfile() {
       <DashBoardNavbar/>
       <div className='flex flex-col lg:flex-row items-start lg:px-18 px-4 py-14 gap-4'>
         <div className='lg:w-[20%] w-full'>
-          <ProfileDetail onTabChange={handleTabChange}/>
+          <ProfileDetail userType='buyer' onTabChange={handleTabChange}/>
         </div>
         <div className='flex-1 w-full space-y-8'>
           {activeTab === 'profile' && (
@@ -41,6 +42,7 @@ function MyProfile() {
           )}
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

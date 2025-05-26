@@ -23,7 +23,7 @@ function DashboardCards() {
       icon: <PiCodesandboxLogoFill className="text-2xl" />,
       title: 'My Prototypes',
       description: 'Track your prototype requests',
-      route: '/BuyerPrototypes'
+      route: '/BuyerPrototypeList'
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ function DashboardCards() {
       icon: <FaCcApplePay className="text-2xl " />,
       title: 'Payments',
       description: 'Manage your transactions',
-      route: '/ReleasePayment'
+      route: '/BuyerPaymentDetail'
     }
   ];
 

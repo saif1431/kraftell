@@ -304,18 +304,7 @@ export default function PaymentTable() {
 
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-      {/* Table Info */}
-      <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
-        <div className="flex justify-between items-center">
-          <p className="text-sm text-gray-700">
-            Showing {(currentPage - 1) * itemsPerPage + 1} to {Math.min(currentPage * itemsPerPage, allPayments.length)}{" "}
-            of {allPayments.length} payments
-          </p>
-          <p className="text-sm text-gray-500">
-            Page {currentPage} of {totalPages}
-          </p>
-        </div>
-      </div>
+
 
       {/* Table */}
       <div className="overflow-x-auto">
