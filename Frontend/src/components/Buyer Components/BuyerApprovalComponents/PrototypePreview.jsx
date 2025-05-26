@@ -8,9 +8,9 @@ function PrototypePreview() {
   <p className='text-primary text-sm'>Prototype #PRO-2025-001</p>
   </div>
       {/* Preview Render----------- */}
-      <div className=''>
-            
-            <div className='mt-4 bg-white w-full h-[500px] rounded-lg flex items-center justify-center text-primary'>
+      <div className='bg-white w-full mt-4 p-4 h-[550px] rounded-lg  '>
+
+            <div className=' bg-primary flex items-center justify-center w-full h-full rounded-lg  text-primary'>
                    prototype preview
             </div>
       </div>

@@ -9,10 +9,10 @@ function ManufacturerCard() {
     {
       id: 1,
       icon: <IoMdArrowRoundForward className="text-2xl" />,
-      title: 'Matching Projects',
+      title: 'My Project ',
       TotalNumber: '24',
       description: 'New matches today',
-      route: '' // Added actual route path
+      route: '/MatchingProject' // Added actual route path
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ function ManufacturerCard() {
       title: 'Prototype Requests',
       TotalNumber: '8',
       description: 'Pending requests',
-      route: '/PendingPrototypes'
+      route: '/PrototypeRequestList'
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ function ManufacturerCard() {
       title: 'Payments',
       TotalNumber: '$2,400',
       description: 'Available balance',
-      route: ''
+      route: '/PaymentTable'
     }
   ];
 

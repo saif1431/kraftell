@@ -10,6 +10,11 @@ import PendingPrototypePage from '../pages/Manufacturer Pages/PendingPrototypePa
 import EditProfilePage from '../pages/Manufacturer Pages/EditProfilePage'
 import ProductRequestPage from '../pages/Manufacturer Pages/ProductRequestPage'
 import UploadPreviewPage from '../pages/Manufacturer Pages/UploadPreviewPage'
+import NotificationsPage from '../pages/Manufacturer Pages/NotificationsPage'
+import MatchingProjectPage from '../pages/Manufacturer Pages/MatchingProjectPage'
+import PrototypeRequestPage from '../pages/Manufacturer Pages/PrototypeRequestPage'
+import PaymentTablePage from '../pages/Manufacturer Pages/PaymentTablePage'
+import PrototypePreviewPage from '../pages/Manufacturer Pages/PrototypePreviewPage'
 
 function ManufacturerPageRoutes() {
   return (
@@ -24,6 +29,11 @@ function ManufacturerPageRoutes() {
       <Route path='/EditProfile' element={<EditProfilePage />} />
       <Route path='/ProductRequestForm' element={<ProductRequestPage />} />
       <Route path='/UploadPreview' element={<UploadPreviewPage />} />
+      <Route path='/notification' element={<NotificationsPage />} />
+      <Route path='/MatchingProject' element={<MatchingProjectPage />} />
+      <Route path='/PrototypeRequestList' element={<PrototypeRequestPage />} />
+      <Route path='/PaymentTable' element={<PaymentTablePage />} />
+      <Route path='/PrototypePreview' element={<PrototypePreviewPage />} />
    </Routes>
   )
 }

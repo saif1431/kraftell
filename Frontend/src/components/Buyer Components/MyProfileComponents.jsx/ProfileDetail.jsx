@@ -3,12 +3,14 @@ import profileImg from '/profileImg.svg'
 import { CgProfile } from "react-icons/cg";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { RxQuestionMarkCircled } from "react-icons/rx";
+import { FaCcAmazonPay } from "react-icons/fa";
 
 function ProfileDetail({ onTabChange }) {
   const [activeTab, setActiveTab] = useState('profile');
 
   const tabs = [
     { id: 'profile', label: 'Profile', icon: <CgProfile /> },
+    { id: 'payments', label: 'Payment', icon: <FaCcAmazonPay /> },
     { id: 'notifications', label: 'Notifications', icon: <IoMdNotificationsOutline /> },
     { id: 'security', label: 'Security', icon: <RxQuestionMarkCircled /> },
   ];

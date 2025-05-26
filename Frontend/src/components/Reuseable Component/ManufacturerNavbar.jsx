@@ -13,9 +13,11 @@ function ManufacturerNavbar() {
     { name: 'Edit Profile', path: '/EditProfile' },
     { name: 'Profile Summary', path: '/ProfileSummary' },
     { name: 'Make Payment', path: '/PaymentForm' },
-    { name: 'View Matching Projects', path: '' },
+    { name: 'View Matching Projects', path: '/MatchingProject' },
+    { name: 'My Orders', path: '' },
     { name: 'Prototype Request', path: '/PendingPrototypes' },
     { name: 'MemberShip', path: '/MemberShip' },
+    { name: 'Notifications', path: '/notification' },
   ];
 
   const handleLogoutClick = (e) => {
@@ -25,10 +27,8 @@ function ManufacturerNavbar() {
   };
 
   const confirmLogout = () => {
-    // Add your logout logic here
     console.log('Manufacturer logged out');
     setShowLogoutModal(false);
-    // Redirect to login page or perform other logout actions
   };
 
   const cancelLogout = () => {
@@ -37,19 +37,39 @@ function ManufacturerNavbar() {
 
   return (
     <div className='flex justify-between items-center bg-white shadow-md lg:px-10 px-4 py-4 sticky top-0 z-50'>
-      <NavLink to='/ManufacturerDashboard' className='w-42'>
+      <NavLink to='/ManufacturerDashboard' className='lg:w-42 w-24'>
         <img src={logo} alt="Company Logo" />
       </NavLink>
       
-      <div className='flex items-center gap-4'>
-       <div className='relative'>
-       <LuMessageCircle className='text-3xl cursor-pointer hover:text-gray-600' />
-       <div className='w-2 h-2 bg-[#FFBB00] absolute left-5 bottom-1 rounded-full'></div>
-       </div>
-        <TfiMenuAlt 
-          className='text-3xl cursor-pointer hover:text-gray-600' 
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        />
+      <div className='flex items-center gap-6'>
+        {/* Profile Section */}
+       
+
+        {/* Icons */}
+        <div className='flex items-center gap-4'>
+          <div className='relative'>
+            <LuMessageCircle className='text-3xl cursor-pointer hover:text-gray-600' />
+            <div className='w-2 h-2 bg-[#FFBB00] absolute left-5 bottom-1 rounded-full'></div>
+          </div>
+          <TfiMenuAlt 
+            className='text-3xl cursor-pointer hover:text-gray-600' 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
+        </div>
+         <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
+            <img 
+              src="https://randomuser.me/api/portraits/men/1.jpg" 
+              alt="Profile" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="text-right">
+            <p className="text-sm text-start text-gray-600">Hello</p>
+            <p className="font-medium">John Doe</p>
+          </div>
+
+        </div>
       </div>
 
       {/* Menu Popup */}
@@ -82,7 +102,7 @@ function ManufacturerNavbar() {
 
       {/* Logout Confirmation Modal */}
       {showLogoutModal && (
-        <div className="fixed inset-0  bg-opacity-50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white shadow-lg border border-gray-300 rounded-lg p-6 max-w-md w-full mx-4">
             <h2 className="text-xl font-semibold mb-4">Confirm Logout</h2>
             <p className="mb-6">Are you sure you want to logout?</p>

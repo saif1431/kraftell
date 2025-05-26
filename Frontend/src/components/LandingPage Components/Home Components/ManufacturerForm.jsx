@@ -3,23 +3,40 @@ import { NavLink } from 'react-router-dom';
 
 const ManufacturerForm = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    brandName: '',
+    businessName: '',
     email: '',
     password: '',
+    companyType: '',
+    productType: '',
     country: '',
     phoneNumber: '',
-    profileImage: null
+    profileImage: null,
+    portfolioFile: null
   });
   const [previewImage, setPreviewImage] = useState(null);
   const fileInputRef = useRef(null);
+  const portfolioInputRef = useRef(null);
 
-  // Limited country list with only 4 countries
+  // Country list
   const countryList = [
     { code: 'AO', name: 'Angola' },
-    { code: 'BD ', name: 'Bangladesh' },
+    { code: 'BD', name: 'Bangladesh' },
     { code: 'CY', name: 'Cyprus' },
     { code: 'DK', name: 'Denmark' }
+  ];
+
+  const companyTypes = [
+    { name: 'Startup' },
+    { name: 'Solo Creator' },
+    { name: 'SME' },
+    { name: 'Other' }
+  ];
+
+  const productTypes = [
+    { name: 'Fashion' },
+    { name: 'Accessories' },
+    { name: 'Crafts' },
+    { name: 'Others' }
   ];
 
   const handleChange = (e) => {
@@ -44,6 +61,16 @@ const ManufacturerForm = () => {
         setPreviewImage(reader.result);
       };
       reader.readAsDataURL(file);
+    }
+  };
+
+  const handlePortfolioChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setFormData(prev => ({
+        ...prev,
+        portfolioFile: file
+      }));
     }
   };
 
@@ -72,6 +99,7 @@ const ManufacturerForm = () => {
               accept="image/*"
               className="hidden"
               onChange={handleImageChange}
+              ref={fileInputRef}
             />
             <label htmlFor="profileImage" className="cursor-pointer">
               {previewImage ? (
@@ -100,35 +128,45 @@ const ManufacturerForm = () => {
             </label>
           </div>
 
-          {/* Form Fields */}
           <div className="rounded-md space-y-4">
-            {/* Full Name */}
-            <div>
+               <div>
               <input
-                id="fullName"
-                name="fullName"
-                placeholder='Full Name'
+                id="Name"
+                name="name"
+                placeholder='Name'
                 type="text"
                 required
                 className="mt-1 block w-full px-3 py-3 bg-white rounded-sm outline-none"
-                value={formData.fullName}
+                value={formData.Name}
                 onChange={handleChange}
               />
             </div>
-
-            {/* Brand Name */}
             <div>
               <input
-                id="brandName"
-                name="brandName"
-                placeholder='Brand Name'
+                id="businessName"
+                name="businessName"
+                placeholder='Business Name'
                 type="text"
                 required
                 className="mt-1 block w-full px-3 py-3 bg-white rounded-sm outline-none"
-                value={formData.brandName}
+                value={formData.businessName}
                 onChange={handleChange}
               />
             </div>
+            <div className='mt-1 w-full px-3 py-3 bg-white rounded-sm outline-none flex flex-col text-gray-500'>
+              <label  htmlFor="">Upload Image</label>
+              <input
+                id="businessName"
+                name="businessName"
+                placeholder='Business Name'
+                type="file"
+                required
+                className=""
+                value={formData.businessName}
+                onChange={handleChange}
+              />
+            </div>
+         
 
             {/* Email */}
             <div>
@@ -157,18 +195,49 @@ const ManufacturerForm = () => {
                 onChange={handleChange}
               />
             </div>
-
-            {/* Country (Now with only 4 options) */}
             <div>
+              <input
+                id="phone"
+                name="phone"
+                placeholder='Phone'
+                type="number"
+                required
+                className="mt-1 block w-full px-3 py-3 bg-white rounded-sm outline-none"
+                value={formData.phone}
+                onChange={handleChange}
+              />
+            </div>
+
+            {/* Company Type */}
+            <div>
+              <select
+                id="companyType"
+                name="companyType"
+                required
+                className="mt-1 block w-full px-3 py-3 bg-white text-gray-500 rounded-sm outline-none"
+                value={formData.companyType}
+                onChange={handleChange}
+              >
+                <option value="">Company Type</option>
+                {companyTypes.map((company, index) => (
+                  <option key={index} value={company.name}>
+                    {company.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+ {/* Country */}
+ <div>
               <select
                 id="country"
                 name="country"
                 required
-                className="mt-1 block w-full px-3 py-3 bg-white text-gray-600 rounded-sm outline-none"
+                className="mt-1 block w-full px-3 py-3 bg-white text-gray-500 rounded-sm outline-none"
                 value={formData.country}
                 onChange={handleChange}
               >
-                <option value="">Country</option>
+                <option value="">Location</option>
                 {countryList.map((country) => (
                   <option key={country.code} value={country.code}>
                     {country.name}
@@ -176,29 +245,50 @@ const ManufacturerForm = () => {
                 ))}
               </select>
             </div>
-
-            {/* Phone Number */}
+            {/* Product Type */}
+            <div>
+              <select
+                id="productType"
+                name="productType"
+                required
+                className="mt-1 block w-full px-3 py-3 bg-white text-gray-500 rounded-sm outline-none"
+                value={formData.productType}
+                onChange={handleChange}
+              >
+                <option value="">Product Category</option>
+                {productTypes.map((product, index) => (
+                  <option key={index} value={product.name}>
+                    {product.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+            {/* Portfolio Upload */}
             <div>
               <input
-                id="phoneNumber"
-                name="phoneNumber"
-                placeholder='Phone Number'
-                type="tel"
-                required
-                className="mt-1 block w-full px-3 py-3 bg-white rounded-sm outline-none"
-                value={formData.phoneNumber}
-                onChange={handleChange}
+                type="file"
+                id="portfolioFile"
+                name="portfolioFile"
+                accept=".pdf,.doc,.docx"
+                className="hidden"
+                onChange={handlePortfolioChange}
+                ref={portfolioInputRef}
               />
+              <button
+                type="button"
+                onClick={() => portfolioInputRef.current.click()}
+                className="w-full px-3 py-3 bg-white rounded-sm text-gray-500 outline-none border border-gray-300 text-left"
+              >
+                {formData.portfolioFile ? formData.portfolioFile.name : 'Portfolio Upload (optional)'}
+              </button>
             </div>
           </div>
 
           {/* Submit Button */}
           <div className='flex items-end justify-end'>
             <NavLink to='/ManufacturerDashboard'>
-
-            
             <button
-              type="submit"
+             
               className=" flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-blue-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Submit

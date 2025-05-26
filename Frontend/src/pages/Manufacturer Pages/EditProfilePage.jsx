@@ -5,6 +5,7 @@ import ProfileInformation from '../../components/Buyer Components/MyProfileCompo
 import Document from '../../components/Buyer Components/MyProfileComponents.jsx/Document'
 import ChangePassword from '../../components/Buyer Components/MyProfileComponents.jsx/ChangePassword'
 import NotificationsPage from '../Manufacturer Pages/NotificationsPage'
+import ChosePayment from './ChosePayment'
 // import NotificationSettings from '../../components/Buyer Components/MyProfileComponents.jsx/NotificationSettings' // Create this new component
 
 function EditProfilePage() {
@@ -33,6 +34,12 @@ function EditProfilePage() {
           {activeTab === 'notifications' && (
             <div>
               <NotificationsPage/>
+            </div>
+            // <NotificationSettings/>
+          )}
+          {activeTab === 'payments' && (
+            <div>
+              <ChosePayment/>
             </div>
             // <NotificationSettings/>
           )}
