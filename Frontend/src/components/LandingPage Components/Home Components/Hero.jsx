@@ -10,7 +10,7 @@ function Hero() {
         
         <div className='space-x-5 mt-12' >
         <NavLink to='/MemberShip' className='bg-[#3977ED] text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300'>Get Free Started</NavLink>
-        <button className='bg-white text-black px-6 py-3 rounded-lg hover:bg-slate-200 transition duration-300'>See How It Works</button>
+        <NavLink to='/HowItWorks' className='bg-white text-black px-6 py-3 rounded-lg hover:bg-slate-200 transition duration-300'>See How It Works</NavLink>
         </div>
       </div>
       

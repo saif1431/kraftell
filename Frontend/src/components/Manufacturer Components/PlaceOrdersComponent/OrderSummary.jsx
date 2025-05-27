@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function OrderSummary() {
   return (
@@ -59,7 +60,7 @@ function OrderSummary() {
 <span>$14,994.00</span>
       </div>
 </div>
-<button className='bg-[#3977ED] text-white w-full px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300 font-semibold text-lg flex items-center gap-2 justify-center'>Place Order</button>
+<NavLink to='/PaymentForm' className='bg-[#3977ED] text-white w-full px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300 font-semibold text-lg flex items-center gap-2 justify-center'>Place Order</NavLink>
 <button className='bg-white border border-gray-300 text-black w-full px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300 font-semibold text-lg flex items-center gap-2 justify-center'>Download CV </button>
 </div>    
 </div>

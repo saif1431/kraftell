@@ -8,6 +8,7 @@ import { FaCreditCard } from 'react-icons/fa';
 
 
 
+
 function SecurePayment() {
   const serviceBoxes = [
     {

@@ -8,6 +8,9 @@ import BuyerSignUpForm from '../pages/Landing Pages/BuyerSignUpForm'
 import ManufacturerSignUpForm from '../pages/Landing Pages/ManufacturerSignUpForm'
 import LoginForm from '../pages/Landing Pages/LoginForm'
 import Message from '../pages/Buyer Pages/Message'
+import AboutUsPage from '../pages/Landing Pages/AboutUsPage'
+import OurMissionPage from '../pages/Landing Pages/OurMissionPage'
+import HowItWorksPage from '../pages/Landing Pages/HowItWorksPage'
 
 
 function LandingPageRoutes() {
@@ -22,6 +25,9 @@ function LandingPageRoutes() {
     <Route path='/MemberShip' element={<MemberShip />} />
    
     <Route path='/Message' element={<Message />} />
+    <Route path='/AboutUs' element={<AboutUsPage />} />
+    <Route path='/OurMission' element={<OurMissionPage />} />
+    <Route path='/HowItWorks' element={<HowItWorksPage />} />
     </Routes>
     {/* <Footer/> */}
 </div>

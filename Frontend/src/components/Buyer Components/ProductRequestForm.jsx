@@ -115,7 +115,7 @@ function ProductRequestForm() {
             <label className='text-md text-primary' htmlFor="">Notes to Manufacturer<sup>*</sup></label>
             <textarea rows={3} className='border  border-gray-300 py-3 px-3 rounded-lg outline-none' type="text" placeholder='e.g, Eco-Friendly Chair' />
       </div>
-      <NavLink to='/UploadPreview' className='bg-[#3977ED] text-white px-6 py-4 rounded-lg hover:bg-blue-600 transition duration-300 w-full flex items-center justify-center gap-2'>
+      <NavLink to='/PlaceOrder' className='bg-[#3977ED] text-white px-6 py-4 rounded-lg hover:bg-blue-600 transition duration-300 w-full flex items-center justify-center gap-2'>
       <IoIosSend />
 Send Prototype Request
       </NavLink>

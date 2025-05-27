@@ -1,13 +1,14 @@
 import React from 'react'
 import ManufacturerDashboard from './ManufacturerDashboard'
-import ManufacturerNavbar from '../../components/Reuseable Component/ManufacturerNavbar'
 import OrderAddress from '../../components/Manufacturer Components/PlaceOrdersComponent/OrderAddress'
 import OrderSummary from '../../components/Manufacturer Components/PlaceOrdersComponent/OrderSummary'
+import Footer from '../../components/Reuseable Component/Footer'
+import DashBoardNavbar from '../../components/Reuseable Component/DashBoardNavbar'
 
 function PlaceOrderPage() {
   return (
     <div className='bg-primary'>
-      <ManufacturerNavbar/>
+      <DashBoardNavbar/>
       <div className=' lg:px-18 px-4 lg:py-14 py-8 space-y-6'>
             <div>
             <h1 className='text-2xl font-semibold'>Place Production Order</h1>
@@ -20,7 +21,7 @@ function PlaceOrderPage() {
 
       </div>
 
-
+<Footer/>
     </div>
   )
 }
